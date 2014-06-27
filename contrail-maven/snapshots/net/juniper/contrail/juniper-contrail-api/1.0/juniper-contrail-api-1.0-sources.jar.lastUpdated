@@ -1,0 +1,12 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri May 16 10:32:39 IST 2014
+http\://nexus.opendaylight.org/content/repositories/opendaylight.release/.error=Could not transfer artifact net.juniper.contrail\:juniper-contrail-api\:jar\:sources\:1.0 from/to opendaylight-release (http\://nexus.opendaylight.org/content/repositories/opendaylight.release/)\: null to http\://nexus.opendaylight.org/content/repositories/opendaylight.release/net/juniper/contrail/juniper-contrail-api/1.0/juniper-contrail-api-1.0-sources.jar
+default-http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400216559391
+default-http\://repo.maven.apache.org/maven2/.lastUpdated=1400216559399
+http\://juniper.github.io/contrail-maven/releases/.error=Could not transfer artifact net.juniper.contrail\:juniper-contrail-api\:jar\:sources\:1.0 from/to juniper-contrail (http\://juniper.github.io/contrail-maven/releases)\: null to http\://juniper.github.io/contrail-maven/releases/net/juniper/contrail/juniper-contrail-api/1.0/juniper-contrail-api-1.0-sources.jar
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact net.juniper.contrail\:juniper-contrail-api\:jar\:sources\:1.0 from/to central (http\://repo.maven.apache.org/maven2)\: null to http\://repo.maven.apache.org/maven2/net/juniper/contrail/juniper-contrail-api/1.0/juniper-contrail-api-1.0-sources.jar
+default-http\://juniper.github.io/contrail-maven/releases/.lastUpdated=1400216559384
+default-http\://nexus.opendaylight.org/content/repositories/opendaylight.release/.lastUpdated=1400216559388
+http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/.error=Could not transfer artifact net.juniper.contrail\:juniper-contrail-api\:jar\:sources\:1.0 from/to opendaylight-snapshot (http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/)\: null to http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/net/juniper/contrail/juniper-contrail-api/1.0/juniper-contrail-api-1.0-sources.jar
+default-http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/.lastUpdated=1400216559394
+http\://nexus.opendaylight.org/content/groups/public/.error=Could not transfer artifact net.juniper.contrail\:juniper-contrail-api\:jar\:sources\:1.0 from/to opendaylight-public (http\://nexus.opendaylight.org/content/groups/public/)\: null to http\://nexus.opendaylight.org/content/groups/public/net/juniper/contrail/juniper-contrail-api/1.0/juniper-contrail-api-1.0-sources.jar
