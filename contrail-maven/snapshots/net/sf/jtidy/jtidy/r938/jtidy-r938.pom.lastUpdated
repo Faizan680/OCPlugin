@@ -1,6 +1,0 @@
-#NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Tue May 20 18:10:59 IST 2014
-default-http\://repo.maven.apache.org/maven2/.lastUpdated=1400236675637
-http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400589659856
-http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact net.sf.jtidy\:jtidy\:pom\:r938 from/to central (http\://repo.maven.apache.org/maven2)\: null to http\://repo.maven.apache.org/maven2/net/sf/jtidy/jtidy/r938/jtidy-r938.pom
-default-http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400236675634
