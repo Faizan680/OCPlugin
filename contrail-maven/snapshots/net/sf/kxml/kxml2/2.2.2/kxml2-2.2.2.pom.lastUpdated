@@ -1,0 +1,8 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri May 16 16:07:10 IST 2014
+default-http\://repo1.maven.org/maven2/.lastUpdated=1400236630945
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact net.sf.kxml\:kxml2\:pom\:2.2.2 from/to central (http\://repo1.maven.org/maven2)\: null to http\://repo1.maven.org/maven2/net/sf/kxml/kxml2/2.2.2/kxml2-2.2.2.pom
+default-http\://repo.maven.apache.org/maven2/.lastUpdated=1400236438332
+http\://nexus.opendaylight.org/content/groups/public/.error=Could not transfer artifact net.sf.kxml\:kxml2\:pom\:2.2.2 from/to opendaylight-mirror (http\://nexus.opendaylight.org/content/groups/public/)\: null to http\://nexus.opendaylight.org/content/groups/public/net/sf/kxml/kxml2/2.2.2/kxml2-2.2.2.pom
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact net.sf.kxml\:kxml2\:pom\:2.2.2 from/to central (http\://repo.maven.apache.org/maven2)\: null to http\://repo.maven.apache.org/maven2/net/sf/kxml/kxml2/2.2.2/kxml2-2.2.2.pom
+default-http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400236438330

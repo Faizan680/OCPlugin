@@ -1,0 +1,18 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue May 20 15:52:21 IST 2014
+default-http\://repo2.maven.org/maven2/.lastUpdated=1400236154726
+http\://nexus.opendaylight.org/content/repositories/opendaylight.release/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to opendaylight-release (http\://nexus.opendaylight.org/content/repositories/opendaylight.release/)\: null to http\://nexus.opendaylight.org/content/repositories/opendaylight.release/net/java/jvnet-parent/1/jvnet-parent-1.pom
+default-http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400236154050
+http\://www.eclipse.org/downloads/download.php?r\=1&nf\=1&file\=/rt/eclipselink/maven.repo/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to eclipselink.repository (http\://www.eclipse.org/downloads/download.php?r\=1&nf\=1&file\=/rt/eclipselink/maven.repo)\: null to http\://www.eclipse.org/downloads/download.php?r\=1&nf\=1&file\=%2Frt%2Feclipselink%2Fmaven.repo%2Fnet%2Fjava%2Fjvnet-parent%2F1%2Fjvnet-parent-1.pom
+default-http\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1400236154054
+http\://repo2.maven.org/maven2/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to central2 (http\://repo2.maven.org/maven2)\: null to http\://repo2.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+http\://nexus.opendaylight.org/content/repositories/thirdparty/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to thirdparty (http\://nexus.opendaylight.org/content/repositories/thirdparty)\: null to http\://nexus.opendaylight.org/content/repositories/thirdparty/net/java/jvnet-parent/1/jvnet-parent-1.pom
+default-http\://repo.maven.apache.org/maven2/.lastUpdated=1400236154052
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to central (http\://repo.maven.apache.org/maven2)\: null to http\://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+default-http\://nexus.opendaylight.org/content/repositories/opendaylight.release/.lastUpdated=1400236242130
+default-http\://nexus.opendaylight.org/content/repositories/thirdparty/.lastUpdated=1400236154727
+http\://nexus.opendaylight.org/content/groups/public/.lastUpdated=1400581341527
+default-http\://www.eclipse.org/downloads/download.php?r\=1&nf\=1&file\=/rt/eclipselink/maven.repo/.lastUpdated=1400236154058
+http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to opendaylight-snapshot (http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/)\: null to http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/net/java/jvnet-parent/1/jvnet-parent-1.pom
+default-http\://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/.lastUpdated=1400236242132
+http\://repository.jboss.org/nexus/content/groups/public/.error=Could not transfer artifact net.java\:jvnet-parent\:pom\:1 from/to repository.jboss.org (http\://repository.jboss.org/nexus/content/groups/public/)\: null to http\://repository.jboss.org/nexus/content/groups/public/net/java/jvnet-parent/1/jvnet-parent-1.pom

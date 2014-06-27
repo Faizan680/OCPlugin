@@ -1,0 +1,208 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.sf.apt-jelly</groupId>
+  <artifactId>apt-jelly-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>2.15</version>
+  <name>APT-Jelly - Parent</name>
+  <url>http://apt-jelly.sf.net/</url>
+  <description>The apt-jelly is a source code artifact generation tool.</description>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:http://apt-jelly.svn.sourceforge.net/svnroot/apt-jelly</connection>
+    <developerConnection>scm:svn:https://apt-jelly.svn.sourceforge.net/svnroot/apt-jelly</developerConnection>
+    <url>http://apt-jelly.svn.sourceforge.net/svnroot/apt-jelly</url>
+  </scm>
+
+  <modules>
+    <module>core</module>
+    <module>freemarker</module>
+    <module>jelly</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-idea-plugin</artifactId>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <tagBase>https://apt-jelly.svn.sourceforge.net/svnroot/apt-jelly/tags/</tagBase>
+        </configuration>
+      </plugin>
+      <!--<plugin>-->
+        <!--<groupId>org.codehaus.mojo</groupId>-->
+        <!--<artifactId>animal-sniffer-maven-plugin</artifactId>-->
+        <!--<version>1.6</version>-->
+        <!--<configuration>-->
+          <!--<signature>-->
+            <!--<groupId>org.codehaus.mojo.signature</groupId>-->
+            <!--<artifactId>java15</artifactId>-->
+            <!--<version>1.0</version>-->
+          <!--</signature>-->
+        <!--</configuration>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>enforce-java-5</id>-->
+            <!--<phase>test</phase>-->
+            <!--<goals>-->
+              <!--<goal>check</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+        <!--</executions>-->
+      <!--</plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-apt-jelly-m2</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>enforce-once</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireProperty>
+                  <property>apt-jelly.m2.url</property>
+                  <message>
+The m2 repository for APT-Jelly is at sourceforge.net.  Ever since sourceforge quit
+supporting an ssh login shell, the deployment via scp hasn't worked.  So, you have
+to mount a local sftp directory (e.g. username@web.sourceforge.net:/home/groups/a/ap/apt-jelly/m2)
+and indicate that directory with an "apt-jelly.m2.url" property.
+                  </message>
+                </requireProperty>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>2.3.14</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun</groupId>
+        <artifactId>tools</artifactId>
+        <version>1.5.0</version>
+
+        <scope>system</scope>
+        <systemPath>${java.home}/../lib/tools.jar</systemPath>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>1.6</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>2.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-jelly</groupId>
+        <artifactId>commons-jelly</artifactId>
+        <version>1.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-jexl</groupId>
+        <artifactId>commons-jexl</artifactId>
+        <version>1.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>1.5.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.7</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>apt-jelly</id>
+      <name>APT-Jelly M2 Repository</name>
+      <url>${apt-jelly.m2.url}</url>
+    </repository>
+  </distributionManagement>
+
+</project>
